@@ -1,3 +1,10 @@
+---
+title: "Practical_Machine_Learning_Coursera"
+author: "Dhilen Shah"
+date: "November 13, 2016"
+output: html_document
+---
+
 Practical Machine Learning: Course project
 ===========================================
 
@@ -30,7 +37,7 @@ In the following, I describe the steps concerning the training of a predictive m
 First, the `.csv` file contain the training data is read into R. Here, unavailable values are set as `NA`.
 
 ```{r read.csv}
-rawData <- read.csv("pml-training.csv", na.strings = c("NA", ""))
+rawData <- read.csv("C:/Users/Dhilen/Documents/pml-training.csv", na.strings = c("NA", ""))
 ```
 
 ### Reduce the dataset
@@ -146,3 +153,5 @@ vi[head(order(unlist(vi), decreasing = TRUE), 5L), , drop = FALSE]
 The assignment is based on data of weight lifting exercises. It has been published:
 
 Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. [Qualitative Activity Recognition of Weight Lifting Exercises](http://groupware.les.inf.puc-rio.br/har#ixzz34irPKNuZ). *Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human '13)*. Stuttgart, Germany: ACM SIGCHI, 2013.
+
+
